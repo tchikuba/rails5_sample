@@ -46,3 +46,7 @@ bower.json
 # node_module
 /node_modules/*
 !/node_modules/.keep
+
+# public/assets
+/public/assets/*
+!/public/assets/.keep
