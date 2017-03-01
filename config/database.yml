@@ -21,8 +21,8 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   # 環境に応じて変更して下さい
-  #username: postgres
-  #password: postgres
+  username: postgres
+  password: postgres
 
 development:
   <<: *default
@@ -84,5 +84,5 @@ test:
 production:
   <<: *default
   database: rails5_sample_production
-  username: rails5_sample
-  password: <%= ENV['RAILS5_SAMPLE_DATABASE_PASSWORD'] %>
+  #username: rails5_sample
+  #password: <%= ENV['RAILS5_SAMPLE_DATABASE_PASSWORD'] %>
