@@ -2,7 +2,6 @@
 class ChatMessageChannel < ApplicationCable::Channel
   def subscribed
     stream_from 'chat_message_channel'
-    ActionCable.server.broadcast 'chat_message_channel', message: 'connect.'
   end
 
   def unsubscribed
