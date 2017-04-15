@@ -18,4 +18,8 @@ module SessionsHelper
     reset_session
     @current_user = nil
   end
+
+  def remember(user)
+    cookies.permanent.signed[:user_id] = user.id
+  end
 end

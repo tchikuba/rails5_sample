@@ -9,6 +9,8 @@ class ChatMessageChannel < ApplicationCable::Channel
   end
 
   def speak(data)
-    ChatMessage.create! body: data['message']
+    Rails.logger.debug data
+    Rails.logger.debug cookies.signed[:user_id]
+    ChatMessage.create! user_id: data['user_id'], body: data['message']
   end
 end

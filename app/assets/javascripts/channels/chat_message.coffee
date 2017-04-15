@@ -9,7 +9,7 @@ App.chat_message = App.cable.subscriptions.create "ChatMessageChannel",
     $('#chat_messages').append '<div>' + data['message'] + '</div>'
 
   speak: (message) ->
-    @perform 'speak', message: message
+    @perform 'speak', user_id: document.cookie.replace('user_id=', ''), message: message
 
 $(document).on 'keypress', '[data-behavior~=speak_chat_messages]', (event) ->
   if event.keyCode is 13
