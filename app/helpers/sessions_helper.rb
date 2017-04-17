@@ -12,14 +12,11 @@ module SessionsHelper
     reset_session
     session[:user_id] = user.id
     session[:callback] = callback
+    cookies.permanent.signed[:user_id] = user.id
   end
 
   def log_out
     reset_session
     @current_user = nil
-  end
-
-  def remember(user)
-    cookies.permanent.signed[:user_id] = user.id
   end
 end
