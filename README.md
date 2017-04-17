@@ -1,24 +1,10 @@
-# README
+# Rails 5連載用サンプルアプリケーション@CodeZine
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[CodeZine](http://codezine.jp/)での連載[「サンプルコードで学ぶRuby on Rails 5実践入門」](https://codezine.jp/article/corner/681)で解説に使用しているソースコードです。
 
-Things you may want to cover:
+## バージョン
+* Ruby 2.3.1
+* Rails 5.0
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 動作確認環境
+* OS X Yosemite
